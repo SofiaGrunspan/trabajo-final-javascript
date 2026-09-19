@@ -1,0 +1,582 @@
+/* -------------------------
+   ESTILOS GENERALES
+------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3f3b4f;
+
+    /* Fondo estilo escritorio */
+    background-color: #e8e1d8;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)),
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 80px,
+            rgba(120, 100, 90, 0.04) 81px
+        );
+
+    min-height: 100vh;
+}
+
+
+/* -------------------------
+   HEADER
+------------------------- */
+
+header {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto 0;
+
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 35px;
+
+    border-radius: 18px 18px 0 0;
+    border-bottom: 1px solid #eeeaf3;
+
+    box-shadow: 0 10px 30px rgba(60, 50, 70, 0.10);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6d5b7b;
+}
+
+.logo span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: #cbb7d8;
+    color: white;
+
+    border-radius: 50%;
+}
+
+
+/* -------------------------
+   NAVEGACIÓN
+------------------------- */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #706b78;
+
+    padding: 7px 15px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #eee6f3;
+    color: #6d5b7b;
+}
+
+
+/* -------------------------
+   CONTENIDO PRINCIPAL
+------------------------- */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    background-color: #fffdf9;
+
+    box-shadow: 0 15px 35px rgba(60, 50, 70, 0.10);
+}
+
+
+/* -------------------------
+   PRESENTACIÓN
+------------------------- */
+
+.hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 60px 9%;
+
+    background-color: #f3edf5;
+
+    /* líneas de agenda */
+    background-image: repeating-linear-gradient(
+        transparent,
+        transparent 38px,
+        rgba(150, 130, 160, 0.09) 39px
+    );
+}
+
+.hero-contenido {
+    max-width: 560px;
+}
+
+.etiqueta {
+    color: #9b7daa;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+
+    color: #4e4257;
+
+    margin: 15px 0;
+}
+
+.descripcion {
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: #716b75;
+
+    margin-bottom: 30px;
+}
+
+.boton-principal {
+    display: inline-block;
+
+    background-color: #897096;
+    color: white;
+
+    padding: 13px 25px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.boton-principal:hover {
+    background-color: #6f587b;
+    transform: translateY(-2px);
+}
+
+
+/* Círculo decorativo */
+
+.hero-icono {
+    width: 190px;
+    height: 190px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #d9c9df;
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 90px;
+
+    box-shadow: 15px 15px 0 #eadfea;
+}
+
+
+/* -------------------------
+   SECCIONES
+------------------------- */
+
+.seccion {
+    padding: 70px 10%;
+}
+
+.titulo-seccion {
+    text-align: left;
+
+    max-width: 750px;
+
+    margin: 0 auto 25px;
+}
+
+.titulo-seccion p {
+    color: #aa8cb6;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.titulo-seccion h2 {
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    color: #4e4257;
+
+    margin: 5px 0;
+}
+
+.titulo-seccion span {
+    color: #85808a;
+}
+
+
+/* -------------------------
+   TARJETAS
+------------------------- */
+
+.tarjeta {
+    max-width: 750px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    border: 1px solid #eee8ef;
+
+    box-shadow: 0 8px 20px rgba(70, 60, 80, 0.08);
+}
+
+
+/* -------------------------
+   TAREAS
+------------------------- */
+
+.contenedor-tareas {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+input {
+    border: 1px solid #d8cfdc;
+
+    border-radius: 8px;
+
+    padding: 13px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    background-color: #fdfbfd;
+}
+
+input:focus {
+    border-color: #9c80aa;
+
+    background-color: white;
+}
+
+#nuevaTarea {
+    flex: 1;
+}
+
+
+/* Botones */
+
+button {
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botonAgregar {
+    padding: 12px 20px;
+
+    background-color: #897096;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+#botonAgregar:hover {
+    background-color: #705a7b;
+}
+
+
+/* Lista vertical */
+
+#listaTareas {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+#listaTareas li {
+    width: 100%;
+
+    min-height: 55px;
+
+    background-color: #faf7fb;
+
+    border-left: 5px solid #bba3c5;
+
+    border-radius: 8px;
+
+    padding: 12px 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+}
+
+
+/* Empuja los botones hacia la derecha */
+
+#listaTareas li button:first-of-type {
+    margin-left: auto;
+}
+
+#listaTareas li button {
+    padding: 7px 10px;
+
+    background-color: #e9dfed;
+
+    color: #685572;
+}
+
+#listaTareas li button:hover {
+    background-color: #d9c9df;
+}
+
+
+/* Tarea completada */
+
+#listaTareas li.completada {
+    background-color: #edf3eb;
+
+    border-left-color: #8eaa88;
+
+    color: #8b8b8b;
+
+    text-decoration: line-through;
+}
+
+
+/* -------------------------
+   CALCULADORA
+------------------------- */
+
+.calculadora-seccion {
+    background-color: #f5f0eb;
+}
+
+.calculadora {
+    max-width: 550px;
+}
+
+.campos-calculadora {
+    display: flex;
+
+    gap: 12px;
+}
+
+.campos-calculadora input {
+    width: 50%;
+}
+
+.botones-calculadora {
+    display: flex;
+
+    gap: 10px;
+
+    margin: 25px 0;
+}
+
+.botones-calculadora button {
+    flex: 1;
+
+    height: 50px;
+
+    background-color: #897096;
+
+    color: white;
+
+    font-size: 22px;
+}
+
+.botones-calculadora button:hover {
+    background-color: #705a7b;
+
+    transform: translateY(-2px);
+}
+
+
+/* Resultado */
+
+.resultado-contenedor {
+    background-color: #f2edf4;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.resultado-contenedor p {
+    margin: 0 0 7px;
+
+    color: #8a7c90;
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+#resultado {
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+    font-weight: bold;
+
+    color: #665270;
+}
+
+
+/* -------------------------
+   FOOTER
+------------------------- */
+
+footer {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto 40px;
+
+    background-color: #4e4257;
+
+    color: #ded6e2;
+
+    text-align: center;
+
+    padding: 25px;
+
+    border-radius: 0 0 18px 18px;
+
+    box-shadow: 0 15px 35px rgba(60, 50, 70, 0.10);
+}
+
+.footer-logo {
+    color: white;
+
+    font-size: 19px;
+
+    font-weight: bold;
+}
+
+
+/* -------------------------
+   RESPONSIVE
+------------------------- */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .hero {
+        padding: 45px 8%;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .hero-icono {
+        display: none;
+    }
+
+    .contenedor-tareas {
+        flex-direction: column;
+    }
+
+    .campos-calculadora {
+        flex-direction: column;
+    }
+
+    .campos-calculadora input {
+        width: 100%;
+    }
+
+    #listaTareas li {
+        flex-wrap: wrap;
+    }
+}

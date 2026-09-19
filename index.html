@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow | Organiza tu día</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <span>✓</span>
+            TaskFlow
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#tareas">Mis tareas</a>
+            <a href="#calculadora">Calculadora</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PRESENTACIÓN -->
+        <section id="inicio" class="hero">
+            <div class="hero-contenido">
+                <p class="etiqueta">ORGANIZA · PLANIFICA · COMPLETA</p>
+
+                <h1>Organiza tu día de forma simple.</h1>
+
+                <p class="descripcion">
+                    Una pequeña aplicación para administrar tus tareas
+                    diarias y tener siempre a mano una calculadora.
+                </p>
+
+                <a href="#tareas" class="boton-principal">
+                    Comenzar
+                </a>
+            </div>
+
+            <div class="hero-icono">
+                <span>✓</span>
+            </div>
+        </section>
+
+
+        <!-- LISTA DE TAREAS -->
+        <section id="tareas" class="seccion">
+
+            <div class="titulo-seccion">
+                <p>PRODUCTIVIDAD</p>
+                <h2>Mis tareas</h2>
+                <span>Agrega las actividades que necesitas realizar.</span>
+            </div>
+
+            <div class="tarjeta">
+
+                <div class="contenedor-tareas">
+                    <input
+                        type="text"
+                        id="nuevaTarea"
+                        placeholder="¿Qué necesitas hacer?"
+                    >
+
+                    <button id="botonAgregar">
+                        + Agregar tarea
+                    </button>
+                </div>
+
+                <ul id="listaTareas"></ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- CALCULADORA -->
+        <section id="calculadora" class="seccion calculadora-seccion">
+
+            <div class="titulo-seccion">
+                <p>HERRAMIENTA</p>
+                <h2>Calculadora rápida</h2>
+                <span>Realiza operaciones matemáticas básicas.</span>
+            </div>
+
+            <div class="tarjeta calculadora">
+
+                <div class="campos-calculadora">
+                    <input
+                        type="number"
+                        id="numero1"
+                        placeholder="Primer número"
+                    >
+
+                    <input
+                        type="number"
+                        id="numero2"
+                        placeholder="Segundo número"
+                    >
+                </div>
+
+                <div class="botones-calculadora">
+                    <button id="sumar">+</button>
+                    <button id="restar">−</button>
+                    <button id="multiplicar">×</button>
+                    <button id="dividir">÷</button>
+                </div>
+
+                <div class="resultado-contenedor">
+                    <p>Resultado</p>
+                    <span id="resultado">0</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-logo">
+            <span>✓</span>
+            TaskFlow
+        </div>
+
+        <p>Trabajo Final · Módulo 2 · JavaScript</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
