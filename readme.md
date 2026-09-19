@@ -55,4 +55,8 @@ Sofia Grunspan
 
 ## Demo
 
-La aplicación puede visualizarse utilizando GitHub Pages.
+## Demo
+
+Puedes ver el proyecto funcionando en:
+
+https://sofiagrunspan.github.io/trabajo-final-javascript/
